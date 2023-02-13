@@ -1,0 +1,23 @@
+.task {
+  padding: 10px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__icon {
+    color: #11175E;
+    cursor: pointer;
+  }
+}
+
+.task__checkbox {
+  &_checked {
+    text-decoration: line-through;
+    color: #8F98A8;
+  }
+
+  &:hover {
+    color: #2D70FD;
+  };
+}

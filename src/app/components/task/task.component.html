@@ -1,0 +1,8 @@
+<div class="task">
+  <mat-checkbox [(ngModel)]="isChecked" color="primary">
+    <label class="task__checkbox" [class.task__checkbox_checked]="isChecked">
+      {{ task.task }}
+    </label>
+  </mat-checkbox>
+  <mat-icon class="task__icon" (click)="deleteTask(task)">delete</mat-icon>
+</div>

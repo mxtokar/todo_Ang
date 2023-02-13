@@ -1,0 +1,17 @@
+<mat-card class="dashboard">
+  <div class="dashboard__wrapper">
+    <mat-card-title class="dashboard__title">Daily To Do List</mat-card-title>
+
+    <taskInput (taskAdded)="onTaskAdded()" />
+    <div class="dashboard__todos">
+      <div *ngFor="let task of taskArr">
+        <task [task]="task" (taskDeleted)="onTaskDeleted()" />
+      </div>
+    </div>
+    <hr class="dashboard__divider" />
+
+    <mat-card-actions class="dashboard__actions">
+      <button mat-flat-button class="dashboard__actions_delete" (click)="deleteAllTasks()">Clear All</button>
+    </mat-card-actions>
+  </div>
+</mat-card>

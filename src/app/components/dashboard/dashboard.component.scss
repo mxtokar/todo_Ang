@@ -1,0 +1,51 @@
+.dashboard {
+  margin-top: 20px;
+
+  &__wrapper {
+    width: 600px;
+    height: 95vh;
+    margin: 0 auto;
+  }
+
+  border: 1px solid #11175E;
+  border-radius: 32px;
+  width: 1000px;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+
+  &__todos {
+    height: 62%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  &__title {
+    margin-top: 70px;
+    font-size: 48px;
+    color: #11175E;
+    font-weight: 600;
+  }
+
+  &__divider {
+    margin-top: 30px;
+    width: 100%;
+    height: 1px;
+    background-color: #11175E;
+    border: none;
+  }
+
+  &__actions {
+    width: 100%;
+    justify-content: flex-end;
+
+    &_delete {
+      color: #11175E;
+    }
+  }
+}
+
+
+
+
