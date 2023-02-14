@@ -1,0 +1,9 @@
+<mat-toolbar color="primary" class='header'>
+  <a routerLink="dashboard" mat-button>Dashboard</a>
+  <ng-container *ngIf="currentUser; else loginBtn">
+    <button mat-button (click)="logout()">Logout</button>
+  </ng-container>
+  <ng-template #loginBtn>
+    <a routerLink="login" mat-button>Login</a>
+  </ng-template>
+</mat-toolbar>

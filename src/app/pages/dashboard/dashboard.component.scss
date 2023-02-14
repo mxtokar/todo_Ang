@@ -1,18 +1,17 @@
 .dashboard {
   margin-top: 20px;
-
-  &__wrapper {
-    width: 600px;
-    height: 95vh;
-    margin: 0 auto;
-  }
-
   border: 1px solid #11175E;
   border-radius: 32px;
   width: 1000px;
   margin-bottom: 8px;
   display: flex;
   flex-direction: column;
+
+  &__wrapper {
+    width: 600px;
+    height: 95vh;
+    margin: 0 auto;
+  }
 
   &__todos {
     height: 62%;

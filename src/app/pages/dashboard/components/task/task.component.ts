@@ -1,6 +1,6 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
-import {Todo} from '../../model/todo';
-import {TaskService} from '../../services/task.service';
+import {Todo} from '../../../../core/models/todo';
+import {TaskService} from '../../../../core/services/task.service';
 
 @Component({
   selector: 'task',

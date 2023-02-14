@@ -1,11 +1,3 @@
-<!--<mat-form-field class="task" appearance="outline">-->
-<!--  <input matInput placeholder="Add new list item" [(ngModel)]="addTaskData" required>-->
-<!--  <button class="btn__add" mat-raised-button matSuffix color="primary" (click)="addTask()">Add</button>-->
-<!--</mat-form-field>-->
-<!--<div *ngIf="showError && addTaskData.length === 0" class="error-message">-->
-<!--  Task must contain any letter!-->
-<!--</div>-->
-
 <form [formGroup]="taskForm">
   <mat-form-field class="task" appearance="outline">
     <input matInput placeholder="Add new list item" formControlName="task" />

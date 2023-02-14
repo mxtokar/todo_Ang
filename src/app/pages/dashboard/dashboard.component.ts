@@ -1,12 +1,11 @@
-import {Component, OnChanges, OnInit, SimpleChanges} from '@angular/core';
-import {Todo} from '../../model/todo';
-import {TaskService} from '../../services/task.service';
-import {subscribeOn} from 'rxjs';
+import {Component, OnInit} from '@angular/core';
+import {Todo} from '../../core/models/todo';
+import {TaskService} from '../../core/services/task.service';
 
 @Component({
   selector: 'dashboard',
   templateUrl: './dashboard.component.html',
-  styleUrls: ['dashboard.component.scss'],
+  styleUrls: ['./dashboard.component.scss'],
 })
 export class DashboardComponent implements OnInit {
   public taskArr: Todo[] = [];

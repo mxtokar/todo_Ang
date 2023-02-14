@@ -1,6 +1,6 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
-import {TaskService} from '../../services/task.service';
-import {Todo} from '../../model/todo';
+import {TaskService} from '../../../../core/services/task.service';
+import {Todo} from '../../../../core/models/todo';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 
 @Component({
